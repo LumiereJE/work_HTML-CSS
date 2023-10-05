@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>기본 정보</legend>
+            <label for="id">아이디
+                <input type="text" id="id" value="jks2024">
+            </label>
+            <label for="pw">패스워드
+                <input type="password" id="pw" value="">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>세부 정보</legend>
+            <label for="email">이메일
+                <input type="text" id="email" value="@를 넣어야 합니다.">
+            </label>
+            <label for="phone">전화번호
+                <input type="tel" id="phone" value="하이픈을 넣지 마세요.">
+            </label>
+            <label for="age">나이
+                <input type="text" id="age">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>주소 입력</legend>
+            <label for="city">도시
+                <select id="city">
+                    <option value="강남구" selected>강남구</option>
+                    <option value="서초구">서초구</option>
+                    <option value="성동구">성동구</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>성별</legend>
+            <label for="male"> 남성
+                <input type="radio" id="male">
+            </label>
+            <label for="female"> 여성
+                <input type="radio" id="female">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>직업</legend>
+            <label for="student"> 학생
+                <input type="radio" id="student">
+            </label>
+            <label for="salesman"> 회사원
+                <input type="radio" id="salesman">
+            </label>
+            <label for="homeworker"> 주부
+                <input type="radio" id="homeworker">
+            </label>
+            <label for="none"> 무직
+                <input type="radio" id="none">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>취미를 선택하세요</legend>
+            <label for="exercise"> 운동
+                <input type="radio" id="exercise">
+            </label>
+            <label for="music"> 음악
+                <input type="radio" id="music" checked>
+            </label>
+            <label for="painting"> 그림
+                <input type="radio" id="painting">
+            </label>
+        </fieldset>
+        <label for="join_date"> 가입일
+            <input type="date" id="join_date">
+        </label>
+        <label for="textarea"> 소개글
+            <textarea id="textarea" cols="30" rows="10"></textarea>
+        </label>
+    
+    </form>
+    <div class="btn_box">
+        <button type="submit">
+            <img src="./images/bear.png" alt="곰 캐릭터">
+            <span>제출</span>
+        </button>
+        <button type="reset">
+            <img src="./images/bear.png" alt="곰 캐릭터">
+            <span>초기화</span>
+        </button>
+    </div>
+</body>
+</html>

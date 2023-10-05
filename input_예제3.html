@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        form {
+            width: 800px;
+        }
+        fieldset {
+            width: 400px;
+        }
+        legend {
+            font-weight: 900;
+        }
+        label {
+            display: block;
+            width: 800px;
+            margin-bottom: 8px;
+        }
+        span {
+            display: inline-block;
+            width: 80px;
+        }
+
+        input {
+            width: 300px;
+        }
+        .date_input {
+            width: 150px;
+        }
+        .d_d {
+            font-size: 8px;
+            width: 200px;
+        }
+        .btn_box {
+            text-align: center;
+        }
+        .btn_box > button {
+            margin: 20px 10px;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            background-color: #eee;
+            border: #ccc solid 1px;
+            font-weight: 800;
+           
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1>아이패드 주문하기</h1>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <label for="product">
+                <span>주문상품</span>
+                <input type="text" id="product" placeholder="아이패드 12.9인치" readonly>
+            </label>
+            <label for="name">
+                <span>이름</span>
+                <input type="text" id="name">
+            </label>
+            <label for="adress">
+                <span>배송 주소</span>
+                <input type="text" id="adress">
+            </label>
+            <label for="email">
+                <span>이메일</span>
+                <input type="text" id="email">
+            </label>
+            <label for="phone">
+                <span>연락처</span>
+                <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요(01012345678)">
+            </label>
+            <label for="date"> 
+                <span>배송지정</span>
+                <input class="date_input" type="date" id="date" required>
+                <span class="d_d">(주문일로부터 최소 3일 이후)</span>
+            </label>
+        </fieldset>
+        <div class="btn_box">
+            <button type="submit">주문하기</button>
+            <button type="reset">취소하기</button>
+        </div>
+    </form>
+</body>
+</html>

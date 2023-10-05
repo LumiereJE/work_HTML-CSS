@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 520px;
+            padding: 20px 40px;
+        }
+        p {
+            font-weight: 800;
+        }
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <h1>프론트앤드 개발자 지원서</h1>
+            <span>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</span>
+            <hr>
+            <div>
+                <p>개인정보</p>
+                <label for="name2">이름
+                    <input type="text" id="name2" name="info2" placeholder="공백없이 입력하세요.">
+                </label>
+                <label for="phone2">연락처
+                    <input type="tel" id="phone2" name="info2">
+                </label>
+            </div>
+
+            <div>
+                <p>지원 분야</p> 
+                <label for="webfublishing">
+                    <input type="radio" id="webfublishing" name="part">
+                    웹 퍼블리싱
+                </label>    
+                <label for="webfrontend">
+                    <input type="radio" id="webfrontend" name="part">
+                    웹 프론트앤드
+                </label>
+                <label for="mobileapp">
+                    <input type="radio" id="mobileapp" name="part">
+                    모바일 앱
+                </label>
+            </div>
+
+            <div>
+                <p>지원동기</p>
+                <textarea name="why" id="why" cols="70" rows="5"></textarea>
+            </div>
+            <input type="submit" id="btn" value="접수하기">
+            <input type="reset" id="rs" value="다시쓰기">
+        </fieldset>
+    </form>
+</body>
+</html>

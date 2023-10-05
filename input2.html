@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- select 박스 (콤보박스) -->
+    <!-- optgroup 태그 사용 -->
+    <form action="#">
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <label for="city">지역</label>
+            <select id="city">      <!-- multiple 쓰면 ctrl눌러서 여러개 선택이 가능하지만 잘 안씀 -->
+                <optgroup label="서울시">
+                    <option value="강북구">강북구</option>
+                    <option value="강남구">강남구</option>
+                    <option value="서초구" selected>서초구</option>  <!--기본값을 서초구로 지정-->
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="등록">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <button type="submit">
+            <img src="./images/facebook.png" alt="페이스북 버튼">
+            페이스북에 등록하기
+        </button>
+    </form>
+
+    <input type="text" disabled>
+    <button type="button" disabled>비활성화된 버튼</button>
+    <input type="text" readonly>
+
+    <!-- check box : 동시 선택 가능 -->
+    <form action="#">
+        <fieldset>
+            <legend>좋아하는 과일을 선택하세요.</legend>
+            <input type="checkbox" id="banana" name="fruits" value="banana">
+            <label for="banana">바나나</label>
+            <input type="checkbox" id="apple" name="fruits" value="apple">
+            <label for="apple">사과</label>
+            <input type="checkbox" id="orange" name="fruits" value="orange">
+            <label for="orange">오렌지</label>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <input type="tel" placeholder="전화번호를 입력 하세요" required> <!--reauired 무조건 입력하게 하는 문구 뜨게 하는건데, 안예뻐서 안씀-->
+        <input type="submit">전송</ㅑ>
+    </form>
+
+</body>
+</html>
