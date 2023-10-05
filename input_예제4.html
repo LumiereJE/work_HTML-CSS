@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-
+        .btn_box button {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .btn_box img {
+            width: 20px;
+        }
 
     </style>
 </head>
@@ -80,9 +87,9 @@
         <label for="join_date"> 가입일
             <input type="date" id="join_date">
         </label>
-        <label for="textarea"> 소개글
-            <textarea id="textarea" cols="30" rows="10"></textarea>
-        </label>
+        <p>소개글</p>
+        <textarea id="textarea" cols="30" rows="10"></textarea>
+        
     
     </form>
     <div class="btn_box">
