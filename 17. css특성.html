@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .parent {
+            font-size: 16px;
+            font-style: oblique;
+            /* 키워드 표기법 : 150여개의 컬러 이름이 있음 */
+            background-color: blanchedalmond;
+            color: green;
+        }
+        .child {
+            font-size: 120%;
+            font-weight: lighter;
+            background-color: rgb(255, 0, 0);
+        }
+        .child-to-child {
+            font-size: 120%;
+            /* 4번째 값은 투명도를 의미 : 1에 가까우면 불투명, 0에 가까우면 투명 */
+            background-color: rgba(0, 0, 255, 0.7);
+        }
+        span {
+            font-variant: small-caps;   /* 소문자 크기의 대문자로 변환 */
+        }
+        .car_name {
+            text-align: justify;
+            background-color: pink;
+            text-decoration: overline;
+        }
+        a {
+            text-decoration: none;
+        }
+        .lorem {
+            /* 자간 지정 : 글자 사이의 간격 */
+            letter-spacing: 0px;
+            line-height: 140%;  /* 글자 대비 1.4배 = 1.4em */
+            font-size: 20px;
+            font-weight: bold;
+            color: royalblue;
+            /* 가로거리 / 세로거리 / 번짐정도 / 색상 */
+            text-shadow: 1px 1px 1px #ffa500;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <p>부모의 폰트 크기 입니다. 졸려졸려졸려졸려 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ</p>
+        <div class="child">
+            <p>자식의 폰트 크기 입니다.</p>
+            <div class="child-to-child">
+                <p>자식의 자식 폰트 크기 입니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="car_name">
+        <span>카이엔</span>
+        <span>파나메라</span>
+        <span>타이칸</span>
+    </div>
+
+    <a href="http://naver.com">naver</a>
+
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio saepe ut soluta dicta iste, rem explicabo repellat sunt, libero itaque maiores similique voluptate est consequuntur ipsam asperiores? Optio, ab quia.</p>
+
+</body>
+</html>
