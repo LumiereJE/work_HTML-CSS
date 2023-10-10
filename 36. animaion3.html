@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ani_box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;       /* 어느 동작에서 시작할건지 */
+        }
+        @keyframes move {
+            from {
+                left: 0;
+            }
+            to {
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="ani_box"></div>
+        <button id="start">시작</button>
+        <button id="paused">일시정지</button>
+
+
+    </div>
+    <script>
+        // 자바스크립트
+        const box = document.querySelector(".ani_box");
+
+        // start 라는 id를 가진 요소를 찾아서 클릭이벤트에 익명의 function을 부여
+        document.getElementById("start").addEventListener("click", function() {
+            box.style.animationPlayState = "running"
+        });
+        document.getElementById("paused").addEventListener("click", function() {
+            box.style.animationPlayState = "paused"
+        });
+
+    </script>
+</body>
+</html>

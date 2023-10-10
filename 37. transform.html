@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 변형(transform)효과 : 회전, 이동, 크기조절, 기울기 조절 */
+        .container {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 50px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            
+            background-color: red;
+        }
+        .box:hover {
+            transform: translate(100px, 200px);
+            transform: scale(2, 2);
+            transform: skew(30deg, 30deg);
+            transform: rotate(30deg);
+            transform-origin: top left;
+        } 
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
