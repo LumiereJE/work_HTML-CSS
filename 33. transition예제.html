@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신상품 목록</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .wrap {
+            width: 1080px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        main {
+            margin: 0 auto;
+        }
+        .prod {
+            width: 300px;
+            height: 200px;
+            text-align: center;
+
+            float: left;
+            margin: 10px 5px;
+            position: relative;
+        }
+        img {
+
+        }
+        .info {
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+
+            transition: 0.5s linear;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: #fff;
+            margin: 50px 0 20px;
+
+        }
+        p {
+            color: #fff;
+            margin: 10px 0;
+        }
+        .prod:hover .info {
+            opacity: 1;
+        }
+        
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <h2>신상품 목록</h2>
+        <main>
+            <div class="prod">
+                <img src="./images/prod1.jpg" alt="연필사진">
+                <div class="info">
+                    <h3 class="name">상품 1</h3>
+                    <p class="desc">상품 설명 텍스트</p>
+                    <p class="price">가격 12,345원</p>
+                </div>
+            </div>
+            <div class="prod">
+                <img src="./images/prod2.jpg" alt="옷걸이사진">
+                <div class="info">
+                    <h3 class="name">상품 2</h3>
+                    <p class="desc">상품 설명 텍스트</p>
+                    <p class="price">가격 12,345원</p>
+                </div>
+            </div>
+            <div class="prod">
+                <img src="./images/prod3.jpg" alt="와인잔사진">
+                <div class="info">
+                    <h3 class="name">상품 3</h3>
+                    <p class="desc">상품 설명 텍스트</p>
+                    <p class="price">가격 12,345원</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
