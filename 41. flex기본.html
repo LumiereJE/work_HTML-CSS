@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex_box {
+            display: flex;
+
+            /* flex의 진행방향과 주축 방향을 결정 */
+            flex-flow: row wrap;
+
+            /* 아이템이 컨테이너 영역을 벗어날 때 어떻게 처리할지 결정 */
+            /* 기본 nowrap */
+
+            /* 주축에 대한 정렬 방법 */
+            justify-content: space-evenly;
+            /* 교차축에 대한 정렬 */
+            align-items: center;
+
+            width: 300px;
+            height: 200px;
+            background-color: rgb(109, 16, 151);
+            border: 1px solid #000;
+        }
+        .flex_item {
+            width: 80px;
+            height: 50px;
+            margin: 2px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid palevioletred;
+            color: white;
+            background-color: orange;
+        }
+        .flex_item:nth-child(2n) {
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_box">
+        <div class="flex_item">item1</div>
+        <div class="flex_item">item2</div>
+        <div class="flex_item">item3</div>
+        <div class="flex_item">item4</div>
+        <div class="flex_item">item5</div>
+        <div class="flex_item">item6</div>
+        <div class="flex_item">item7</div>
+        <div class="flex_item">item8</div>
+        <div class="flex_item">item9</div>
+    </div>
+</body>
+</html>
