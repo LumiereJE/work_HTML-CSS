@@ -6,15 +6,23 @@ body {
     margin: 0;
     background-color: #000;
 }
+.wrap {
+    position: relative;
+}
 header {
     width: 225px;
     padding: 20px;
     overflow: hidden;
-    /* background-color: #222; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    border-right: 1px solid rgba(153, 153, 153, 0.2);
 }
 main {
     margin: 0 auto;
-    padding-left: 225px;
+    padding: 50px 45px 50px 270px;
+    /* padding-left: 225px; */
 }
 a {
     text-decoration: none;

@@ -1,0 +1,48 @@
+.banner {
+    width: 100%;
+    height: 250px;
+    background-color: #555;
+
+    display: flex;
+}
+.img_box {
+    width: 370px;
+    height: 258px;
+}
+.txt_box {
+    width: 55%;
+}
+.hover_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.play_btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play_arrow {
+    width: 20px;
+    height: 20px;
+    background-position: -262px -755px;
+}
+.more_dot {
+    width: 27px;
+    height: 10px;
+    background-position: -520px -430px;
+}
+.b_img {
+    width: 360px;
+    height: 250px;
+    background-image: url('./vibe/NAVER VIBE(바이브)_files/banner1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
