@@ -1,0 +1,263 @@
+* {
+    color: #fff;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #000;
+}
+header {
+    width: 225px;
+    padding: 20px;
+    overflow: hidden;
+    /* background-color: #222; */
+}
+main {
+    margin: 0 auto;
+    padding-left: 225px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+/* 헤더 내용 */
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20231007001140_resources/img/sp_topbar.abb84804.svg');
+}
+.icon2 {
+    width: 17px;
+    height: 14px;
+    background-image: url('https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20231007001140_resources/img/sp_vibe.5e308b02.svg');
+}
+
+.logo > div {
+    /* width: 114px;
+    height: 20px;
+    background-image: url('./vibe/NAVER\ VIBE\(바이브\)_files/logo.png');
+    background-repeat: no-repeat;
+    padding: 20px; */
+    padding: 10px 0;
+}
+
+.membership > div {
+    display: flex;
+    align-items: center;
+
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+}
+.profile_img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    background-image: url('https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20231007001140_resources/img/sp_topbar.abb84804.svg');
+    background-position: -627px -104px;
+}
+.membership span {
+    color: #999;
+    font-size: 15px;
+}
+.membership_ch > p {
+    font-size: 14px;
+    color: #999;
+}
+.membership_btn {
+    width: 177px;
+    height: 44px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-image: linear-gradient(104deg,#ff0c28 9%,#d901df 51%,#7200ff 98%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.membership_btn_w {
+    width: 100px;
+    height: 16px;
+    background-image: url('https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20231007001140_resources/img/sp_topbar.abb84804.svg');
+    background-position: -426px -68px;
+}
+.search_box {
+    width: 177px;
+    height: 44px;
+    background-color: #1a1a1a;
+    border-radius: 6px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    background-position: -228px -606px;
+}
+.search_box > input {
+    width: 130px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #1a1a1a;
+    border-style: none;
+}
+.top_cate {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+}
+ul span {
+    font-size: 17px;
+    color: #999;
+    margin: 0 10px;
+}
+li a {
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+}
+li:hover li > a > span{
+    color: #fff;
+}
+.today {
+    background-position: -312px -606px;
+}
+.chart {
+    background-position: -353px -509px;
+}
+.new_album {
+    background-position: -561px -570px;
+}
+.dj_station {
+    background-position: -409px -509px;
+}
+.mag {
+    background-position: -549px -509px;
+}
+.monthly {
+    background-position: -590px -538px;
+}
+.service {
+    background-position: -393px -279px;
+}
+.mymoney {
+    background-position: -340px -606px;
+}
+.onstage {
+    background-position: -32px -606px;
+}
+.audio {
+    background-position: -488px -480px;
+}
+.app_download {
+    width: 177px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid rgba(153, 153, 153, 0.2);
+    background-color: #000;
+    line-height: 44px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 100px;
+}
+.app_download span {
+    color: #999;
+}
+
+/* footer */
+footer {
+    background-color: #111;
+    padding: 0 80px;
+    padding-bottom: 100px;
+}
+.footer_top {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notice_box {
+    font-size: 13px;
+}
+.title {
+    color: #666;
+}
+.notice:hover {
+    text-decoration:underline;
+}
+.sns {
+    display: flex;
+    justify-content: flex-end
+}
+.facefook {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px;
+    background-position: -429px -264px;
+}
+.instagram {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px;
+    background-position: -38px -665px;
+}
+.naverblog {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px;
+    background-position: -106px -665px;
+}
+
+.footer_mid {
+    padding: 20px 0;
+}
+.company > span {
+    color: #999;
+    margin-right: 10px;
+    display: inline-block;
+}
+.company span {
+    font-size: 13px;
+}
+.detail {
+    font-size: 13px;
+}
+.detail a > span {
+    margin-right: 14px;
+    color: #666;
+    display: inline-block;
+}
+.icon_flex {
+    position: relative;
+    display: inline-block;
+}
+.icon_flex > span {
+    padding-left: 25px;
+    line-height: 16px;
+}
+.smartbot {
+    background-position: -512px -548px;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+.toktok {
+    background-position: -785px -71px;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+}
+.corp {
+    display: inline-block;
+    color: #999;
+    margin-top: 20px;
+}

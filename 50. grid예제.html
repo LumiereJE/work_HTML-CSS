@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드예제</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .wrap {
+            width: 100vw;
+            /* margin: 0 auto; */
+            /* padding: 10px; */
+            background-color: #eee;
+
+
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, 300px);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .item_box {
+            border: 1px solid #999;
+            padding: 10px 20px 20px;
+            background-color: #fff;
+            box-shadow: 1px 1px 5px black;
+        }
+        .item_box img {
+            width: 150px;
+        }
+        .item_box p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-1.jpg" alt="컵사진 1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-2.jpg" alt="컵사진 2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-3.jpg" alt="컵사진 3">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-4.jpg" alt="컵사진 4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-5.jpg" alt="컵사진 5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-6.jpg" alt="컵사진 6">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-7.jpg" alt="컵사진 7">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+        <div class="item_box">
+            <h4>사진제목</h4>
+            <img src="./images/cup-1.jpg" alt="컵사진 8">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aspernatur. Commodi sed dolores, laudantium obcaecati explicabo cumque placeat est veniam, odit debitis nam voluptates ea autem aspernatur quod impedit cupiditate?</p>
+        </div>
+    </div>
+</body>
+</html>
