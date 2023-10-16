@@ -12,14 +12,17 @@ body {
 header {
     width: 225px;
     padding: 20px;
-    /* overflow: hidden; */
     overflow-y: auto;
+    z-index: 10;
 
     position: fixed;
     top: 0;
     left: 0;
     background-color: #000;
     border-right: 1px solid rgba(153, 153, 153, 0.2);
+}
+.m_header {
+    display: none;
 }
 main {
     margin: 0 auto;
@@ -130,6 +133,9 @@ ul span {
     color: #999;
     margin: 0 10px;
 }
+.bottom_cate {
+    margin-bottom: 100px;
+}
 li a {
     margin-left: 10px;
     margin-bottom: 20px;
@@ -179,7 +185,11 @@ li:hover li > a > span{
     line-height: 44px;
     text-align: center;
     font-size: 15px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+
+    position: absolute;
+    bottom: 30px;
+    left: 24px;
 }
 .app_download span {
     color: #999;
@@ -210,7 +220,10 @@ footer {
 }
 .sns {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+}
+.under_sns {
+    display: none;
 }
 .facefook {
     width: 26px;
@@ -230,7 +243,6 @@ footer {
     margin: 0 10px;
     background-position: -106px -665px;
 }
-
 .footer_mid {
     padding: 20px 0;
 }
@@ -270,10 +282,14 @@ footer {
     top: 2px;
     left: 9px;
 }
-.corp {
+.corp_box {
     display: inline-block;
+}
+.corp {
+    font-size: 14px;
     color: #999;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* player_controller */
@@ -301,7 +317,15 @@ footer {
     height: 44px;
 }
 .song_info {
+    width: 100%;
+    max-width: 20vw;
     margin: 10px 16px 10px 10px; 
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .song_info a {
     display: block;
